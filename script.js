@@ -22,8 +22,7 @@
         }
     });
     
-    
-    // debug
+    // [TODO:remove]
     // temporarily expose the impress API to the global
     window['impressApi'] = impressApi;
 })();
