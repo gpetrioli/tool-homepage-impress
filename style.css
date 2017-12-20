@@ -48,12 +48,17 @@ body{
 #impress .slide{
     cursor:pointer;
 }
+
 .impress-on-what-we-do    #what-we-do{cursor:default;}
 .impress-on-our-work      #our-work{cursor:default;}
 .impress-on-what-we-offer #what-we-offer{cursor:default;}
 .impress-on-our-services  #our-services{cursor:default;}
 .impress-on-contact-us    #contact-us{cursor:default;}
 .impress-on-tool-timeline #tool-timeline{cursor:default;}
+
+#tool-of-tool ~ .step:not(.skip){opacity:0.4;transition:opacity 200ms}
+#tool-of-tool.present.active ~ .step:not(.skip){opacity:1}
+
 
 #impress .step:before{
     content:'';
@@ -64,6 +69,7 @@ body{
     right:0;
     opacity:1;
 }
+#impress .step.active{opacity:1}
 
 /*experimenting with section backgrounds*/
 #impress .step:nth-child(1){/*background-color:rgba(250,0,0,0.3);*/} /*skiped section - holds the tool word*/
@@ -96,5 +102,4 @@ body{
     height:660px;
     /*-webkit-filter:drop-shadow(40px 40px 20px rgba(0,0,0,0.2));
     filter:drop-shadow(40px 40px 20px rgba(0,0,0,0.2));*/
-
 }
