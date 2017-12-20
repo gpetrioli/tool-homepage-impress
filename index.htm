@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tool homepage tests</title>
+</head>
+<body>
+    <div id="impress-container">
+        <div id="impress" data-width="1440" data-height="660">
+          
+            <div data-x="0" data-y="0" data-z="-400" data-scale="2" id="background" class="step skip"></div>
+           
+            <div data-x="0" data-y="0" data-z="0" data-scale="2" id="tool-of-tool" class="step"></div>
+            
+
+            <div id="what-we-do" class="step slide" data-x="-1080" data-y="-480" data-z="0">
+                what we do.
+            </div>
+            <div id="our-work" class="step slide" data-x="-915" data-y="150" data-z="0">
+                our work.
+            </div>
+            <div id="what-we-offer" class="step slide" data-x="-200" data-y="-165" data-z="0">
+                what we offer.
+            </div>
+            <div id="our-services" class="step slide" data-x="775" data-y="-170" data-z="0">
+                our services.
+            </div>
+            <div id="contact-us" class="step slide" data-x="1125" data-y="0" data-rotate="-90" data-z="0">
+                contact us.
+            </div>
+            <div id="tool-timeline" class="step slide" data-x="580" data-y="495" data-rotate="-90" data-z="0">
+                tool timeline.
+            </div>
+        </div>
+    </div>
+    
+    <script src="impress.js"></script>
+    <script>
+        var impressApi = impress();
+        impressApi.init();
+    </script>
+    <style>
+        *{box-sizing:border-box;}
+        html{
+            height:100%;
+            width:100%;
+        }
+        body{
+            margin:0;
+            padding:0;
+            width:100%;
+            min-height:100%;
+            background:white;
+            position:relative;
+            overflow:hidden;
+            padding:65px 20px 135px;
+            background:#333333;
+        }
+        #impress-container{
+            width:100%;
+            height:100%;
+            overflow:hidden;
+            background-color:white;
+            position:relative;
+            /*background:url(layout/background.jpg) 50% 50% no-repeat;
+            background-size:cover;*/
+        }
+        #impress .step{
+            padding:1em;
+            font-size:4rem;
+            font-family: Averta, sans-serif;
+            font-size:26px;
+            
+            /*temporaty*/
+            white-space:nowrap;
+            
+        }
+        #impress .slide{
+            cursor:pointer;
+        }
+        .impress-on-what-we-do    #what-we-do{cursor:default;}
+        .impress-on-our-work      #our-work{cursor:default;}
+        .impress-on-what-we-offer #what-we-offer{cursor:default;}
+        .impress-on-our-services  #our-services{cursor:default;}
+        .impress-on-contact-us    #contact-us{cursor:default;}
+        .impress-on-tool-timeline #tool-timeline{cursor:default;}
+        
+        #impress .step:nth-child(1){/*background-color:rgba(250,0,0,0.3);*/}}
+        #impress .step:nth-child(2){/*background-color:rgba(250,0,0,0.3);*/}
+        #impress .step:nth-child(3){background-color:rgba(0,0,250,0.3);}
+        #impress .step:nth-child(4){background-color:rgba(250,0,0,0.3);}
+        #impress .step:nth-child(5){background-color:rgba(250,250,0,0.3);}
+        #impress .step:nth-child(6){background-color:rgba(250,0,250,0.3);}
+        #impress .step:nth-child(7){background-color:rgba(0,250,250,0.3);}
+        #impress .step:nth-child(8){background-color:rgba(0,250,0,0.3);}
+        #tool-of-tool{
+            /*background:transparent url('layout/tool.svg') 50% 50% no-repeat;
+            background-size:cover;*/
+        }
+        #background{
+            background:url(layout/background.jpg) 50% 50% no-repeat;
+            width:3275px;
+            height:2999px;
+            pointer-events:none;
+        }
+        #tool-of-tool.step{
+            background:url(layout/tool.svg?a=9) 50% 50% no-repeat;
+            width:1500px;
+            height:660px;
+            -webkit-filter:drop-shadow(40px 40px 20px rgba(0,0,0,0.2));
+            filter:drop-shadow(40px 40px 20px rgba(0,0,0,0.2));
+            
+        }
+    </style>
+</body>
+</html>
