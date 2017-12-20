@@ -2,6 +2,7 @@
 html{
     height:100%;
     width:100%;
+    font-size:16px;
 }
 body{
     margin:0;
@@ -24,17 +25,12 @@ body{
     background-size:cover;*/
 }
 #impress .step{
-    padding:1em;
-    font-size:4rem;
+    padding:1.75rem;
     font-family: Averta, sans-serif;
-    font-size:26px;
-
-    /*temporaty*/
-    white-space:nowrap;
+    font-size:1rem;
 
     transition:background-color 300ms;
     position:relative;
-
 }
 #impress .step:before{
     position:absolute;
@@ -45,10 +41,20 @@ body{
     opacity:0;
     transition:all 400ms;
 }
+#impress .step h1{
+    white-space: nowrap;
+    margin: 0 0 0 0;
+    font-size:2rem;
+}
+#impress .step h1 + *{
+    margin-top:0.5rem;
+}
+#impress .step ul{padding-left:1rem;}
+#impress .step .nowrap{white-space: nowrap}
 #impress .slide{
     cursor:pointer;
 }
-
+#impress .slide:hover{color:#ca4041;}
 .impress-on-what-we-do    #what-we-do{cursor:default;}
 .impress-on-our-work      #our-work{cursor:default;}
 .impress-on-what-we-offer #what-we-offer{cursor:default;}
@@ -98,8 +104,9 @@ body{
 
 #tool-of-tool.step{
     background:url(layout/tool.svg?a=9) 50% 50% no-repeat;
-    width:1500px;
-    height:660px;
+    width:1540px;
+    height:860px;
+    box-sizing:content-box;
     /*-webkit-filter:drop-shadow(40px 40px 20px rgba(0,0,0,0.2));
     filter:drop-shadow(40px 40px 20px rgba(0,0,0,0.2));*/
 }
