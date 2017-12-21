@@ -32,15 +32,7 @@ body{
     transition:background-color 300ms;
     position:relative;
 }
-#impress .step:before{
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:100%;
-    opacity:0;
-    transition:all 400ms;
-}
+
 #impress .step h1{
     white-space: nowrap;
     margin: 0 0 0 0;
@@ -64,17 +56,22 @@ body{
 
 #tool-of-tool ~ .step:not(.skip){opacity:0.4;transition:opacity 200ms}
 #tool-of-tool.present.active ~ .step:not(.skip){opacity:1}
-
-
+/*
 #impress .step:before{
     content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:100%;
+    opacity:0;
+    transition:all 400ms;
 }
-
 #impress .step.active.present:not(.future):before{
     content:'';
     right:0;
     opacity:1;
-}
+}*/
 #impress .step.active{opacity:1}
 
 /*experimenting with section backgrounds*/
