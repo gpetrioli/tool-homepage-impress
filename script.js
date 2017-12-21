@@ -11,10 +11,11 @@
     
     document.documentElement.addEventListener('wheel', function (e) {
         if (!scrolling && e.wheelDelta !== 0) {
-            if (e.wheelDelta < 0){
+			let delta = e.deltaY;
+            if (delta > 0){
                 // wheel scroll down
                 impressApi.next();
-            } else if (e.wheelDelta > 0) {
+            } else if (delta < 0) {
                 // wheel scroll up
                 impressApi.prev();
             }
