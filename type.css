@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Averta-light";
+    src: url('fonts/338AD9_1_0.eot');
+    src: url('fonts/338AD9_1_0.eot?#iefix') format('embedded-opentype'),
+        url('fonts/338AD9_1_0.woff2') format('woff2'),
+        url('fonts/338AD9_1_0.woff') format('woff'),
+        url('fonts/338AD9_1_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Averta";
+    src: url('fonts/338AD9_2_0.eot');
+    src: url('fonts/338AD9_2_0.eot?#iefix') format('embedded-opentype'),
+        url('fonts/338AD9_2_0.woff2') format('woff2'),
+        url('fonts/338AD9_2_0.woff') format('woff'),
+        url('fonts/338AD9_2_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Averta-italic";
+    src: url('fonts/338AD9_3_0.eot');
+    src: url('fonts/338AD9_3_0.eot?#iefix') format('embedded-opentype'),
+        url('fonts/338AD9_3_0.woff2') format('woff2'),
+        url('fonts/338AD9_3_0.woff') format('woff'),
+        url('fonts/338AD9_3_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Averta-semibold";
+    src: url('fonts/338AD9_4_0.eot');
+    src: url('fonts/338AD9_4_0.eot?#iefix') format('embedded-opentype'),
+        url('fonts/338AD9_4_0.woff2') format('woff2'),
+        url('fonts/338AD9_4_0.woff') format('woff'),
+        url('fonts/338AD9_4_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Averta-bold";
+    src: url('fonts/338AD9_0_0.eot');
+    src: url('fonts/338AD9_0_0.eot?#iefix') format('embedded-opentype'),
+        url('fonts/338AD9_0_0.woff2') format('woff2'),
+        url('fonts/338AD9_0_0.woff') format('woff'),
+        url('fonts/338AD9_0_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-light {
+    font-family: 'Averta-light'
+}
+.font-regular {
+    font-family: 'Averta'
+}
+.font-italic {
+    font-family: 'Averta-italic'
+}
+.font-semibold {
+    font-family: 'Averta-semibold'
+}
+.font-bold {
+    font-family: 'Averta-bold'
+}
+em {
+    font-family: 'Averta-italic';
+}
+strong, h1, h2, h3, h4 {
+    font-family:'Averta-bold';
+}
