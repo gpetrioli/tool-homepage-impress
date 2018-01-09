@@ -12,7 +12,7 @@ body{
     background:white;
     position:relative;
     overflow:hidden;
-    padding:65px 20px 135px;
+    padding:65px 20px 20px;
     background:#333333;
 }
 #impress-container{
@@ -27,7 +27,7 @@ body{
 #impress .step{
     padding:1.75rem;
     font-family: Averta, sans-serif;
-    font-size:1rem;
+    font-size:1.2rem;
 
     transition:background-color 300ms;
     position:relative;
@@ -36,7 +36,7 @@ body{
 #impress .step h1{
     white-space: nowrap;
     margin: 0 0 0 0;
-    font-size:2rem;
+    font-size:3.5rem;
 }
 #impress .step h1 + *{
     margin-top:0.5rem;
@@ -100,10 +100,33 @@ body{
 }
 
 #tool-of-tool.step{
-    background:url(layout/tool.svg?a=9) 50% 50% no-repeat;
-    width:1540px;
-    height:860px;
+    background:url(layout/tool.svg?a=9) 3% 50% no-repeat;
+    background-size:2500px 1100px;
+    width:1000px;
+    height:1535px;
     box-sizing:content-box;
     /*-webkit-filter:drop-shadow(40px 40px 20px rgba(0,0,0,0.2));
     filter:drop-shadow(40px 40px 20px rgba(0,0,0,0.2));*/
+}
+
+@media screen and (min-width:769px){
+    body{padding-bottom:135px;}
+    #tool-of-tool.step{
+        background-size:contain;
+        background-position:50% 50%;
+        width:1540px;
+        height:860px;
+    }
+    #impress .step{font-size:1rem;}
+    #impress .step h1{font-size:2rem}
+    #impress .step h1 br{display:none}
+}
+
+@media screen and (max-width:768px){
+    .step h1{line-height:1.2;}
+    #our-work {text-align: right;}
+    #our-work h1 {padding-left: 5rem;}
+    #our-work h1 + * {padding-right: 0.5rem;}
+    
+    
 }
